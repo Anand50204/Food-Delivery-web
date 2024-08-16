@@ -12,7 +12,6 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // midelware
-
 app.use(express.json());
 app.use(cors());
 
@@ -26,9 +25,6 @@ app.use("/api/user",userRouter);
 app.use("/api/cart",cartRouter);
 app.use("/api/order",orderRouter)
 
-// app.get("/",(req,res)=>{
-//     res.send("API working")
-// })
 
 app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`);
