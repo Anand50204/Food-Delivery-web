@@ -61,6 +61,7 @@ const placeOrder = async (event)=>{
 
  useEffect(()=>{
   if(!token){
+    alert("Please Login again order")
     navigate("/cart")
   }
   else if(getTotalCartAmount()===0){
